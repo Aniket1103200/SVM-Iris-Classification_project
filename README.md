@@ -29,6 +29,6 @@ In this project, we use the SVM algorithm to predict the species of Iris based o
 ## Installation
 Clone the repository and install the required libraries:
 ```bash
-git clone https://github.com/YourUsername/SVM-Iris-Classification.git
+git clone [https://github.com/YourUsername/SVM-Iris-Classification.git](https://github.com/Aniket1103200/SVM-Iris-Classification_project.git)
 cd SVM-Iris-Classification
 pip install -r requirements.txt
