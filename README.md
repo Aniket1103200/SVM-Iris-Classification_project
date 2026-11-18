@@ -1,34 +1,29 @@
-# SVM-Iris-Classification_project
-A classification project using Support Vector Machines (SVM) to analyze and predict species from the Iris dataset. This project explores the SVM algorithm and its applications in discriminant analysis, using features such as sepal and petal dimensions to classify different Iris species.
+# Iris Species Classification with SVM
 
-# SVM Iris Classification Project
+Classifies iris flowers into **setosa, versicolor and virginica** from four measurements: sepal length and width, petal length and width.
 
-This project uses Support Vector Machines (SVM) to classify different species within the famous Iris dataset. The Iris dataset is a classic example for testing classification algorithms, as it contains three different classes of Iris flowers: Iris setosa, Iris virginica, and Iris versicolor, with four features per sample.
+> 📚 **Course project:** completed while following the Udemy course *Python for Data Science and Machine Learning Bootcamp* (Pierian Data). The dataset and task come from the course.
 
-## Project Overview
-In this project, we use the SVM algorithm to predict the species of Iris based on measurements of sepals and petals. This project helps understand SVM's discriminative ability and the importance of selecting appropriate kernels for effective classification.
+## Approach
+1. Loaded the Iris data set (`seaborn.load_dataset('iris')`) and explored it with pair plots and KDE plots
+2. Trained a **Support Vector Classifier** (scikit-learn `SVC`)
+3. Tuned `C` and `gamma` with **GridSearchCV**
+4. Evaluated with a confusion matrix and a classification report
 
-## Dataset
-- **Source**: [Iris flower data set](http://en.wikipedia.org/wiki/Iris_flower_data_set)
-- **Features**:
-  - Sepal length
-  - Sepal width
-  - Petal length
-  - Petal width
-- **Target**: Species (Iris setosa, Iris virginica, Iris versicolor)
+## Results (test set: 45 flowers)
 
-## Key Features
-- Data analysis and visualization
-- Implementation of Support Vector Machine for classification
-- Evaluation of model performance with metrics
+| Model | Accuracy |
+|---|---|
+| SVC (default parameters) | **0.98** |
+| SVC tuned with GridSearchCV | **0.98** |
 
-## Requirements
-- Python 3.x
-- Libraries: `numpy`, `pandas`, `matplotlib`, `seaborn`, `sklearn`
+## Tech
+Python · pandas · NumPy · scikit-learn · Matplotlib · Seaborn · Jupyter
 
-## Installation
-Clone the repository and install the required libraries:
+## Run it
 ```bash
-git clone [https://github.com/YourUsername/SVM-Iris-Classification.git](https://github.com/Aniket1103200/SVM-Iris-Classification_project.git)
-cd SVM-Iris-Classification
+git clone https://github.com/Aniket1103200/SVM-Iris-Classification_project.git
+cd SVM-Iris-Classification_project
 pip install -r requirements.txt
+jupyter notebook svm_iris_classification.ipynb
+```
